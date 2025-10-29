@@ -17,7 +17,7 @@ const app = express();
 // Middleware
 // Enable CORS
 app.use(cors({
-  origin: ['http://localhost:3000','http://localhost:5173','http://localhost:5174'], // Replace with your frontend URL
+  origin: ['http://localhost:3000','http://localhost:5173','http://localhost:5174',"https://pgfront.netlify.app/"], // Replace with your frontend URL
   methods: ['GET', 'POST','PUT','DELETE'], // Allowed methods
   credentials: true // Allow cookies if needed
 }));
