@@ -85,11 +85,11 @@ async function loginOwner(identifier, password) {
 
        let ownerName = owner?.ownerName?.firstName+""+owner?.ownerName?.lastName
 
-       await sendEmail(
-         "avinashavi2048@gmail.com",
-         'Sucessfully loged In',
-         generateLoginNotificationTemplate(ownerName,new Date()) // (name,time)
-       );
+      //  await sendEmail(
+      //    "avinashavi2048@gmail.com",
+      //    'Sucessfully loged In',
+      //    generateLoginNotificationTemplate(ownerName,new Date()) // (name,time)
+      //  );
 
       console.log('Login successful');
       return { token, ownerId: owner._id };
