@@ -12,8 +12,8 @@ module.exports = {
   },
   email: {
     host: process.env.EMAIL_HOST || 'smtp.gmail.com',
-    port: process.env.EMAIL_PORT || 587,
-    secure: process.env.EMAIL_SECURE || false, // true for 465, false for other ports
+    port: +process.env.EMAIL_PORT || 587,
+    secure: Boolean(process.env.EMAIL_SECURE) || false, // true for 465, false for other ports
     user: process.env.EMAIL_USER || 'avinashgunturu123@gmail.com',
     pass: process.env.EMAIL_PASS || 'wuhu zkhb wwdx vnts',
     from: process.env.EMAIL_FROM || 'avinashgunturu123@gmail.com',
