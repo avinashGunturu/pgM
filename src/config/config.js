@@ -2,7 +2,7 @@
 require('dotenv').config();
 
 module.exports = {
-  port: process.env.PORT || 3000,
+  port: process.env.PORT || 4000,
   database: {
     url: process.env.MONGODB_URI || 'mongodb://localhost:27017/pgmanagement', // Use your cloud MongoDB URI here
   },
